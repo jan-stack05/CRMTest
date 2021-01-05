@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="781" started-at="2021-01-05T18:27:23Z" finished-at="2021-01-05T18:27:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="781" started-at="2021-01-05T18:27:23Z" finished-at="2021-01-05T18:27:24Z">
+      <class name="com.sampleproject.qa.testcases.LoginPageTest">
+        <test-method status="FAIL" signature="loginTest_unsuccess([[Ljava.lang.Object;)[pri:0, instance:com.sampleproject.qa.testcases.LoginPageTest@75329a49]" name="loginTest_unsuccess" duration-ms="764" started-at="2021-01-05T23:57:23Z" data-provider="readExcel" finished-at="2021-01-05T23:57:24Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: loginTest_unsuccess([Parameter{index=0, type=[[Ljava.lang.Object;, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)Mr.,(java.lang.String)Tom,(java.lang.String)Peter,(java.lang.String)Google]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: loginTest_unsuccess([Parameter{index=0, type=[[Ljava.lang.Object;, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)Mr.,(java.lang.String)Tom,(java.lang.String)Peter,(java.lang.String)Google]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_unsuccess -->
+      </class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
