@@ -1,5 +1,9 @@
 package com.sampleproject.qa.testcases;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -58,7 +62,7 @@ public class LoginPageTest extends TestBase{
 		System.out.println("Name :" +firstname);
 		System.out.println("Password:" +password);
 		boolean flag =loginPage.unsuccessful_login(firstname,password); 
-		Assert.assertTrue(flag);
+		AssertJUnit.assertTrue(flag);
 	}
 
 	@AfterMethod

@@ -1,6 +1,6 @@
 package com.sampleproject.qa.testcases;
 
-import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -37,13 +37,13 @@ public class HomePageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyHomePageTitleTest(){
 		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "CRMPRO","Home page title not matched");
+		AssertJUnit.assertEquals(homePageTitle, "CRMPRO","Home page title not matched");
 	}
 	
 	@Test(priority=2)
 	public void verifyUserNameTest(){
 		testUtil.switchToFrame();
-		Assert.assertTrue(homePage.verifyCorrectUserName());
+		AssertJUnit.assertTrue(homePage.verifyCorrectUserName());
 	}
 	
 	
