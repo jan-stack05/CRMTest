@@ -15,6 +15,7 @@ import org.testng.annotations.DataProvider;
 
 import com.sampleproject.qa.util.TestUtil;
 
+
 public class TestBase {
 
 	public static WebDriver driver;
@@ -68,15 +69,19 @@ public class TestBase {
 		driver.get(prop.getProperty("url"));
 
 	}
-
-
-
-
-
-
-
-
-
-
-
+	
+	
 }
+	
+
+
+
+
+
+
+
+
+
+
+
+

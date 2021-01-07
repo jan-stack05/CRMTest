@@ -1,4 +1,4 @@
-package com.sampleproject.qa.testcases;
+package com.qa.web.testcases;
 
 import org.testng.AssertJUnit;
 import org.testng.annotations.AfterMethod;

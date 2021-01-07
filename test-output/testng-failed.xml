@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.sampleproject.qa.testcases.LoginPageTest">
+      <class name="com.qa.restassured.apitests.AccountApiTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginTest_unsuccess" invocation-numbers="0"/>
-          <include name="setUp"/>
+          <include name="createAuthToken"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
-      <class name="com.sampleproject.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyUserNameTest"/>
-          <include name="verifyHomePageTitleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.sampleproject.qa.testcases.HomePageTest -->
+      </class> <!-- com.qa.restassured.apitests.AccountApiTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
