@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.sampleproject.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loginTest_unsuccess" invocation-numbers="0"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
-      <class name="com.sampleproject.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyUserNameTest"/>
-          <include name="verifyHomePageTitleTest"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.sampleproject.qa.testcases.HomePageTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
+	<test name="Test(failed)">
+		<classes>
+			<class name="com.sampleproject.qa.testcases.LoginPageTest">
+				<methods>
+					<include name="tearDown" />
+					<include name="loginTest_unsuccess" invocation-numbers="0" />
+					<include name="setUp" />
+				</methods>
+			</class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
+			<class name="com.sampleproject.qa.testcases.HomePageTest">
+				<methods>
+					<include name="verifyUserNameTest" />
+					<include name="verifyHomePageTitleTest" />
+					<include name="setUp" />
+					<include name="tearDown" />
+				</methods>
+			</class> <!-- com.sampleproject.qa.testcases.HomePageTest -->
+		</classes>
+	</test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

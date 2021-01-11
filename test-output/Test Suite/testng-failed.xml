@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]">
-  <test name="Demo Test Cases(failed)">
-    <classes>
-      <class name="com.sampleproject.qa.testcases.LoginPageTest">
-        <methods>
-          <include name="crmLogoImageTest"/>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
-    </classes>
-  </test> <!-- Demo Test Cases(failed) -->
+	<test name="Demo Test Cases(failed)">
+		<classes>
+			<class name="com.sampleproject.qa.testcases.LoginPageTest">
+				<methods>
+					<include name="crmLogoImageTest" />
+					<include name="tearDown" />
+					<include name="loginPageTitleTest" />
+					<include name="loginTest" />
+					<include name="setUp" />
+				</methods>
+			</class> <!-- com.sampleproject.qa.testcases.LoginPageTest -->
+		</classes>
+	</test> <!-- Demo Test Cases(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

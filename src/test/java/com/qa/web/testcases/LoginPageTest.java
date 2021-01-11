@@ -35,26 +35,30 @@ public class LoginPageTest extends TestBase{
 	}
 
 
-	/*
-	 * @Test(priority=1) public void loginPageTitleTest() { String title =
-	 * loginPage.validateLoginPageTitle(); Assert.assertEquals(title,
-	 * "CRMPRO - CRM software for customer relationship management, sales, and support."
-	 * ); }
-	 * 
-	 * 
-	 * 
-	 * @Test(priority=2) public void crmLogoImageTest(){ boolean flag =
-	 * loginPage.validateCRMImage(); Assert.assertTrue(flag); }
-	 */
+	
+	  @Test(groups = { "UI" },priority=1) 
+	  public void loginPageTitleTest()
+	  { 
+		  String title =
+	  loginPage.validateLoginPageTitle(); Assert.assertEquals(title,
+	  "CRMPRO - CRM software for customer relationship management, sales, and support."
+	  );
+	  }
+	  
+	  
+	  
+	  @Test(groups = { "UI" },priority=2)  public void crmLogoImageTest(){ boolean flag =
+	  loginPage.validateCRMImage(); Assert.assertTrue(flag); }
+	 
 
-	/*
-	 * @Test(priority=3, dataProvider="getTestData") public void
-	 * loginTest_unsuccess(){ boolean flag =
-	 * loginPage.unsuccessful_login(prop.getProperty("username"),
-	 * prop.getProperty("password")); Assert.assertTrue(flag); }
-	 */
+	
+	  @Test(groups = { "UI" },priority=3, dataProvider="getTestData") public void
+	  loginTest_unsuccess(){ boolean flag =
+	  loginPage.unsuccessful_login(prop.getProperty("username"),
+	  prop.getProperty("password")); Assert.assertTrue(flag); }
+	 
 
-	@Test(dataProvider="readExcel",dataProviderClass = TestBase.class) 
+	@Test(groups = { "UI" },priority=4,dataProvider="readExcel",dataProviderClass = TestBase.class) 
 
 	public void loginTest_unsuccess(String firstname,String password)
 	{
